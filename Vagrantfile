@@ -14,5 +14,5 @@ Vagrant.configure("2") do |config|
         # v.customize ["modifyvm", :id, "--natdnsproxy1", "off"]
         # v.auto_nat_dns_proxy = false
     end
-    config.vm.provision "shell", path: "https://raw.githubusercontent.com/AOEpeople/chef-devbox/master/setup.sh"
+    config.vm.provision "shell", path: "https://raw.githubusercontent.com/schmengler/chef-devbox/test-devbox/setup.sh"
 end
