@@ -11,7 +11,7 @@ if ! hash git 2>/dev/null; then
 fi
 
 if [ ! -d /etc/chef-devbox ] || [ ! -f /etc/chef-devbox/Berksfile ] ; then
-    git clone https://github.com/aoepeople/chef-devbox.git /etc/chef-devbox || { echo >&2 "Cloning failed"; exit 1; }
+    git clone https://github.com/schmengler/chef-devbox.git /etc/chef-devbox || { echo >&2 "Cloning failed"; exit 1; }
 else 
     cd /etc/chef-devbox && git pull
 fi
