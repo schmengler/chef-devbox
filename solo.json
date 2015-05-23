@@ -1,5 +1,19 @@
 {
-    "run_list": [ "recipe[devbox::default]", "recipe[devbox::motd]", "recipe[devbox::hostsfile]", "recipe[selenium::server]", "recipe[chef-mailcatcher::default]" ],
+    "normal": {
+      "xdebug": {
+        "config_file": "/etc/php5/mods-available/xdebug.ini"
+      }
+    },
+    "run_list": [
+      "recipe[devbox::default]",
+      "recipe[devbox::motd]",
+      "recipe[devbox::hostsfile]",
+      "recipe[java]",
+      "recipe[firefox]",
+      "recipe[xvfb]",
+      "recipe[selenium::server]",
+      "recipe[chef-mailcatcher::default]"
+    ],
     "devbox": {
         "main_user": "vagrant"
     }
