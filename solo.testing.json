@@ -1,0 +1,15 @@
+{
+    "normal": {
+    },
+    "run_list": [
+      "recipe[java]",
+      "recipe[firefox]",
+      "recipe[xvfb]",
+      "recipe[selenium::server]",
+      "recipe[graphviz]",
+      "recipe[doxygen]"
+    ],
+    "devbox": {
+        "main_user": "vagrant"
+    }
+}
