@@ -1,0 +1,12 @@
+{
+    "normal": {
+    },
+    "run_list": [
+      "recipe[devbox::instances]",
+      "recipe[devbox::motd]",
+      "recipe[devbox::hostsfile]"
+    ],
+    "devbox": {
+        "main_user": "vagrant"
+    }
+}
