@@ -1,0 +1,1 @@
+net use A: \\192.168.91.11\www vagrant /persistent:no /user:vagrant
