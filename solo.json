@@ -1,18 +1,16 @@
 {
-    "normal": {
-      "xdebug": {
+    "xdebug": {
         "config_file": "/etc/php5/mods-available/xdebug.ini"
-      },
-      "nodejs": {
-          "npm_packages": [
+    },
+    "nodejs": {
+        "npm_packages": [
             {
-              "name": "grunt"
+              "name": "grunt-cli"
             },
             {
               "name": "bower"
             }
-          ]
-        }
+        ]
     },
     "run_list": [
       "recipe[devbox::default]",
